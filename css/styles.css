@@ -395,6 +395,7 @@ justify-content: center;
 }
 
 .company-item {
+    width: 170px;
     display: flex;
     justify-content: center;
     align-items: center;
