@@ -128,12 +128,23 @@ img {
 }
 
 .list-contact {
-    color: var(--accent-txt-cl);
-    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--accent-txt-cl)
     
 }
+.list-contact:hover {
+    color: var(--blue-color);
+}
 
-.div-contact {
+.header-icon {
+    fill: currentColor;
+    margin-right: 10px
+}
+
+/* .div-contact {
     display: flex;
     align-items: center;
     fill: var(--accent-txt-cl);
@@ -143,7 +154,7 @@ img {
 .div-contact:focus {
     fill: var(--blue-color) ;
     cursor: pointer;
-}
+} */
 
 /* Ceкия Hero */
 .hero-container {
@@ -483,9 +494,15 @@ justify-content: center;
     padding-top: 10px;
 }
 .footer-str {
+    margin: 0px;
+    font-family: var(--main-fonts);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
     color: #ffffff;
-    margin-top: 20px;
     text-transform: uppercase;
+
 }
 
 .footer-list {
@@ -574,6 +591,7 @@ justify-content: center;
 }
 
 .portfolio-example-item:hover {
+    display: block;
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
     
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
