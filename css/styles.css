@@ -398,6 +398,7 @@ justify-content: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    --items: 6;
     flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
     margin: calc(var(--indent) / 2);
 }
