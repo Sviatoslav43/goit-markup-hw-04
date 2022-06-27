@@ -218,7 +218,7 @@ img {
 .main-btn:hover,
 .main-btn:focus {
     background-color: #188CE8;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Секция About */
@@ -557,11 +557,10 @@ justify-content: center;
 .btn-item:focus {
     color: var(--white-clr);
     background-color: var(--blue-color);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
-
-    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 
+    0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-desc-list {
@@ -590,14 +589,14 @@ justify-content: center;
     border: 1px solid #eee;  
 }
 
-.portfolio-example-item:hover {
+/* .portfolio-example-item:hover {
     display: block;
     box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
     
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
     
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-}
+} */
 
 /* .portfolio-example-item:hover {
     box-shadow: rgba(0, 0, 0, 0.16), 
@@ -620,6 +619,14 @@ justify-content: center;
     border-bottom: 1px solid #eee;
     border-left: 1px solid #eee;
     border-right: 1px solid #eee; */
+}
+
+.example-link:hover {
+    box-shadow: 
+    0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 
 
