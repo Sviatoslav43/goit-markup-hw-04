@@ -91,6 +91,7 @@ img {
     padding-bottom: 32px;
 }
 
+
 .link-header:not(:last-child) {
     margin-right: 50px;
 }
@@ -128,12 +129,39 @@ img {
 
 .list-contact {
     color: var(--accent-txt-cl);
+    margin-left: 10px;
+    
 }
 
+.div-contact {
+    display: flex;
+    align-items: center;
+    fill: var(--accent-txt-cl);
+}
+
+.div-contact:hover,
+.div-contact:focus {
+    fill: var(--blue-color) ;
+    cursor: pointer;
+}
 
 /* Ceкия Hero */
+.hero-container {
+    background-image: url(../images/photo-hero.jpg);
+}
 .hero-block {
     background-color: var(--secondary-bg-cl);
+    background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), 
+    url(../images/photo-hero.jpg);
+    width: 1600px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -179,6 +207,7 @@ img {
 .main-btn:hover,
 .main-btn:focus {
     background-color: #188CE8;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 /* Секция About */
@@ -200,6 +229,16 @@ img {
     margin-right: 30px;
 }
 
+.about-icons {
+    display: flex;
+    width: 270;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+
 .tag-line {
     font-weight: 700;
     font-size: 14px;
@@ -207,7 +246,7 @@ img {
     color:  var(--secondary-txt-cl);
     text-transform: uppercase;
 
-    margin-top: 0px;
+    margin-top: 30px;
     margin-bottom: 10px;
 
 }
@@ -303,11 +342,84 @@ img {
     line-height: 1.18;
 
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 16px;
     text-align: center;
 }
 
+.team-social-media {
+list-style: none;
+padding: 0px;
+display: flex;
+
+margin: 0px;
+align-items: center;
+justify-content: center;
+}
+
+/* .team-social {
+    border-radius: 50%;
+} */
+
+
+
+.team-social:not(:last-child) {
+    margin-right: 10px;
+
+}
+
+.social-media-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    fill: #AFB1B8;
+    border-radius: 50%;
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+    fill: #ffffff;
+    background-color: var(--blue-color);
+}
+
+/* Секция Company */
+
+.company-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: calc(-1 * var(--indent) / 2);
+    
+}
+
+.company-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
+    margin: calc(var(--indent) / 2);
+}
+
+.company-icon {
+    fill: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    padding: 16px 32px;
+}
+
+.company-icon:hover,
+.company-icon:focus {
+    fill: var(--blue-color);
+    border: 1px solid var(--blue-color);
+}
+
 /* Секция Footer */
+.footer-section {
+    display: flex;
+}
+
 
 .footer-description {
     background-color: var(--secondary-bg-cl);
@@ -364,6 +476,30 @@ img {
     color: #188CE8;
 }
 
+.footer-div {
+    padding-left: 70px;
+    padding-top: 10px;
+}
+.footer-str {
+    color: #ffffff;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.footer-list {
+    margin-top: 20px;
+}
+
+.footer-media {
+    fill: #ffffff;
+}
+
+.footer-icon {
+    background-color:  rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+}
+
 /* New page */
 /* Page Portfolio */
 /*  */
@@ -402,6 +538,11 @@ img {
 .btn-item:focus {
     color: var(--white-clr);
     background-color: var(--blue-color);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-desc-list {
@@ -427,9 +568,28 @@ img {
     flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
     margin: calc(var(--indent) / 2);
 
-    border: 1px solid #eee;
-      
+    border: 1px solid #eee;  
 }
+
+.portfolio-example-item:hover {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+    
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+    
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+
+/* .portfolio-example-item:hover {
+    box-shadow: rgba(0, 0, 0, 0.16), 
+    rgba(0, 0, 0, 0.06),
+    rgba(0, 0, 0, 0.12);
+}
+
+.example-link:hover {
+    box-shadow: rgba(0, 0, 0, 0.16),
+    rgba(0, 0, 0, 0.06),
+    rgba(0, 0, 0, 0.12);
+} */
 
 .example-link {
     text-decoration: none;
@@ -441,6 +601,7 @@ img {
     border-left: 1px solid #eee;
     border-right: 1px solid #eee; */
 }
+
 
 .example-name {
     font-weight: 700;
