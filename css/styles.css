@@ -166,7 +166,7 @@ img {
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)), 
     url(../images/photo-hero.jpg);
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     background-repeat: no-repeat;
     background-position: center;
@@ -242,7 +242,7 @@ img {
 
 .about-icons {
     display: flex;
-    width: 270;
+    width: 270px;
     height: 120px;
     justify-content: center;
     align-items: center;
@@ -406,20 +406,25 @@ justify-content: center;
 }
 
 .company-item {
-    width: 170px;
-    display: flex;
+    
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     --items: 6;
     flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
     margin: calc(var(--indent) / 2);
 }
 
 .company-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
     fill: #AFB1B8;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    padding: 16px 32px;
+    /* padding: 16px 32px; */
 }
 
 .company-icon:hover,
